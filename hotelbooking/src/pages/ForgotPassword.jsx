@@ -1,10 +1,8 @@
 import React from 'react'
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import OAuth from "../components/OAuth";
 import { getAuth, sendPasswordResetEmail} from "firebase/auth";
 import {toast} from "react-toastify";
-import { useNavigate } from "react-router-dom";
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState("");
