@@ -59,7 +59,7 @@ export default function ProfilePage() {
         <div className="md:w-[60%] lg:w-[50%] mb-12 md:mb-6">
           <img
             className="w-full rounded-2xl"
-            src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80"
+            src="https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
           />
         </div>
         <div className="w-full md:w-[60%] lg:w-[40%] lg:ml-20">
