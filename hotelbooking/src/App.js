@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
 import 'react-toastify/dist/ReactToastify.css';
 import PrivateRoute from "./components/PrivateRoute";
+import Sell from "./pages/Sell";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/sells" element={<Sell />} />
         </Routes>
       </Router>
 

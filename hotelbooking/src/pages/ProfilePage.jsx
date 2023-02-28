@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import {toast} from "react-toastify";
 import { db } from "../firebase";
 import { doc, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import { HiArrowRightCircle } from "react-icons/hi2";
 
 export default function ProfilePage() {
 
@@ -91,12 +92,20 @@ export default function ProfilePage() {
                   transition duration-200 ease-in-out ml-3" >{changeDetail ? "Apply change" : "Update Account"}</span>
                 </p>
             </div>
-            <button onClick={onLogout} className="w-full bg-red-700 text-white px-7 py-3
-          text-sm font-medium uppercase rounded shadow-md hover: bg-red-800
-          transition duration-150 ease-in-out hover:shadow-lg active:bg-red-900" type="submit">Log out</button>
-        
+            <button className="w-full bg-lime-700 text-white px-7 py-3
+            text-sm font-medium rounded shadow-md hover: bg-lime-800
+           transition duration-150 ease-in-out hover:shadow-lg active:bg-lime-900" type="submit">
+           <Link to='/sells' className='flex justify-center items-center'>
+                    <HiArrowRightCircle className='mr-2 text-3xl bg-black-200 rounded-full p-1 border-2'/>
+             Sell on Booking.com
+            </Link>
+           </button>              
           </form>
-         
+          <br></br>
+          <button onClick={onLogout} className="w-full bg-red-700 text-white px-7 py-3
+            text-sm font-medium uppercase rounded shadow-md hover: bg-red-800
+            transition duration-150 ease-in-out hover:shadow-lg active:bg-red-900" type="submit">
+            Log out</button>       
         </div>
       </div>
     </section>
