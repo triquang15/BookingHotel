@@ -18,14 +18,20 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+
           <Route path="/account" element={<PrivateRoute />}>
             <Route path="/account" element={<ProfilePage />} />
           </Route>
+
           <Route path="/login" element={<SignIn />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/sells" element={<Sell />} />
+
+          <Route path="/sells" element={<PrivateRoute />}>
+            <Route path="/sells" element={<Sell />} />
+          </Route>
+          
         </Routes>
       </Router>
 
