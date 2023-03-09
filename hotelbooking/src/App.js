@@ -10,6 +10,7 @@ import SignIn from "./pages/SignIn";
 import 'react-toastify/dist/ReactToastify.css';
 import PrivateRoute from "./components/PrivateRoute";
 import Sell from "./pages/Sell";
+import UpdateListing from "./pages/UpdateListing";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
 
           <Route path="/sells" element={<PrivateRoute />}>
             <Route path="/sells" element={<Sell />} />
+          </Route>
+
+          <Route path="/edit-listing" element={<PrivateRoute />}>
+            <Route path="/edit-listing/:listingId" element={<UpdateListing />} />
           </Route>
           
         </Routes>
